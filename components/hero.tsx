@@ -79,7 +79,7 @@ export function Hero() {
         transition={{ duration: 1, delay: 0.7 }}
         className="mt-20 flex flex-col items-center gap-1"
       >
-        <span className="text-xs text-white/20 uppercase tracking-widest">ver mais</span>
+        <span className="text-xs text-white/40 uppercase tracking-widest">ver mais</span>
         <div className="h-8 w-px bg-gradient-to-b from-white/20 to-transparent" />
       </motion.div>
     </section>
