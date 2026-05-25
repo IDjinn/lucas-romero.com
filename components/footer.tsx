@@ -18,7 +18,7 @@ function LinkedinIcon({ className }: { className?: string }) {
 
 export function Footer() {
   return (
-    <footer className="snap-start border-t border-white/10 bg-black/20 backdrop-blur-sm">
+    <footer className="fixed bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/20 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
         <p className="font-mono text-xs text-white/30">
           © 2026 Lucas Romero

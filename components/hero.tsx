@@ -40,15 +40,6 @@ export function Hero() {
         Full Stack Developer
       </motion.p>
 
-      <motion.p
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-        className="mt-6 max-w-xl text-base leading-relaxed text-white/50 sm:text-lg"
-      >
-        Culpa dolor pariatur ea magna. Ipsum commodo labore Lorem et officia sit esse minim duis sunt. Ad cillum elit irure dolor nostrud pariatur officia voluptate incididunt est consectetur consequat aliquip cupidatat. Eu ut officia irure consectetur nostrud eu. Adipisicing Lorem eiusmod qui quis. Velit labore voluptate dolore cupidatat labore minim voluptate sint proident occaecat. Excepteur occaecat commodo est eu.
-      </motion.p>
-
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
