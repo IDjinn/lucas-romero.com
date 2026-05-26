@@ -73,15 +73,16 @@ export function Hero() {
         </a>
       </motion.div>
 
-      <motion.div
+      <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.7 }}
-        className="mt-20 flex flex-col items-center gap-1"
+        onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+        className="mt-20 flex flex-col items-center gap-1 cursor-pointer group"
       >
-        <span className="text-xs text-white/40 uppercase tracking-widest">ver mais</span>
-        <div className="h-8 w-px bg-gradient-to-b from-white/20 to-transparent" />
-      </motion.div>
+        <span className="text-xs text-white/40 uppercase tracking-widest group-hover:text-white/70 transition-colors">ver mais</span>
+        <div className="h-8 w-px bg-gradient-to-b from-white/20 to-transparent group-hover:from-white/40 transition-all" />
+      </motion.button>
     </section>
   )
 }
