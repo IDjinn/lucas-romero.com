@@ -11,8 +11,11 @@ export interface GithubRepo {
   fork: boolean
 }
 
+import { unstable_cacheLife as cacheLife } from 'next/cache'
+
 export async function getGithubRepos(username: string): Promise<GithubRepo[]> {
   'use cache'
+  cacheLife('hours')
   const res = await fetch(
     `https://api.github.com/users/${username}/repos?sort=stars&per_page=30&type=owner`,
     {
